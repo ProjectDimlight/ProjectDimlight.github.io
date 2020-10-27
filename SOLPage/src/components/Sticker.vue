@@ -1,0 +1,50 @@
+<template>
+  <div>
+    <div class="block">
+      <img class="cell" style="width: 120px; height: 100px;"/>
+      <div class="cell" style="width: 240px; padding: 0px 20px;">
+        <div style="font-weight: bold; border-bottom: 1px grey solid; margin-bottom: 5px;">
+          <slot></slot>
+        </div>
+        <div style="font-size: 10px;">
+          <slot name="description">
+          </slot>
+        </div>
+      </div>
+      <div class="cell" style="font-size: 14px; width: 40px; text-align: right; color: cyan; padding-right: 10px;">
+        {{category}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Sticker',
+  props: [
+    'icon',
+    'category'
+  ],
+  data () {
+    return {
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+.block{
+  background-color: rgba(255, 255, 255, 0.2);
+  display: table;
+  width: 400px;
+}
+
+.cell{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+
+</style>
