@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="block">
-      <img class="cell" style="width: 120px; height: 100px;"/>
+      <img class="cell" style="width: 100px; height: 100px;"/>
       <div class="cell" style="width: 240px; padding: 0px 20px;">
         <div style="font-weight: bold; border-bottom: 1px grey solid; margin-bottom: 5px;">
           <slot></slot>
@@ -11,7 +11,7 @@
           </slot>
         </div>
       </div>
-      <div class="cell" style="font-size: 14px; width: 40px; text-align: right; color: cyan; padding-right: 10px;">
+      <div class="cell" style="font-size: 14px; width: 60px; text-align: right; color: cyan; padding-right: 10px;">
         {{category}}
       </div>
     </div>

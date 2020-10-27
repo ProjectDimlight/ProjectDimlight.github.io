@@ -1,10 +1,17 @@
 <template>
   <div class="block">
-    <div class="box" style="width: 200px;">
-      S<span style="font-size: 0.8em; color: cyan;">OL</span>&nbsp;&nbsp;
-      O<span style="font-size: 0.8em; color: cyan;">N</span>&nbsp;&nbsp;
-      L<span style="font-size: 0.8em; color: cyan;">INE</span>
-    </div>
+    <router-link to="/">
+      <div class="box" style="width: 160px;">
+        S<span style="font-size: 0.8em; color: cyan;">OL</span>&nbsp;&nbsp;
+        O<span style="font-size: 0.8em; color: cyan;">N</span>&nbsp;&nbsp;
+        L<span style="font-size: 0.8em; color: cyan;">INE</span>
+      </div>
+    </router-link>
+    <router-link to="/todo">
+      <div class="box">
+        TODO List <span class="label">日程</span>
+      </div>
+    </router-link>
     <div class="box">
       SOL模拟器 <span class="label">AI</span>
     </div>
@@ -50,7 +57,7 @@ export default {
 
 .box {
   transition: 1s;
-  padding: 15px;
+  padding: 15px 10px;
   width: 120px;
   margin: 0px;
   text-align: center;
