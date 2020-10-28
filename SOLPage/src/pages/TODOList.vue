@@ -26,14 +26,14 @@ export default {
     return {
       items: [
         {
-          name: '体系助教',
-          detail: '完成讲题PPT',
-          date: '周三'
+          name: '面试',
+          detail: '查看邮箱进入面试页面',
+          date: '下周一'
         },
         {
-          name: '计算机与问题求解',
-          detail: '寻找数据集完成实验报告',
-          date: '下周一'
+          name: '面试',
+          detail: '查看邮箱进入面试页面',
+          date: '下周五'
         },
         {
           name: '无线网络应用',
