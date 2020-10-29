@@ -3,7 +3,11 @@
     <div style="height: 400px; width: 100vw; overflow-y: hidden;">
       <img style="width: 100%; vertical-align: middle; position: relative; top: calc(200px - 50vw * 847 / 1397);" src="/static/title.png" />
     </div>
-    <div style="text-align: center; padding-top: 60px;">
+    <div style="text-align: center; padding-top: 20px;">
+      <div style="font-size: 30px; letter-spacing: 0.5em; padding-bottom: 5px; margin: 30px 250px; border-bottom: 1px solid grey;">
+        我们的产品
+      </div>
+
       <sticker category="AI" icon="" class="sticker">
         SOL模拟器
         <template v-slot:description>

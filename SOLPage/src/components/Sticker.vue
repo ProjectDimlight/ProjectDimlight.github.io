@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div class="block">
-      <img class="cell" style="width: 100px; height: 100px;"/>
+  <div class="size">
+    <div class="size block">
+      <img class="cell" style="width: 100px; height: 100px;" :src="icon ? icon : '/static/PCIlight.png'"/>
       <div class="cell" style="width: 240px; padding: 0px 20px;">
         <div style="font-weight: bold; border-bottom: 1px grey solid; margin-bottom: 5px;">
           <slot></slot>
@@ -14,6 +14,9 @@
       <div class="cell" style="font-size: 14px; width: 60px; text-align: right; color: cyan; padding-right: 10px;">
         {{category}}
       </div>
+    </div>
+
+    <div class="size shadow">
     </div>
   </div>
 </template>
@@ -35,10 +38,26 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.block{
-  background-color: rgba(255, 255, 255, 0.2);
-  display: table;
+.size{
+  height: 100px;
   width: 400px;
+}
+
+.block{
+  background-color: rgba(48, 48, 48, 0.85);
+  display: table;
+}
+
+.shadow{
+  background-color: rgba(255, 255, 255, 0.65);
+  position: relative;
+  top: -90px;
+  left: 15px;
+  height: 94%;
+  width: 98%;
+  filter: blur(2px);
+
+  z-index: -100;
 }
 
 .cell{
