@@ -26,39 +26,44 @@ export default {
     return {
       items: [
         {
-          name: '数字音视频',
-          detail: '实验9：大范围延时摄影',
-          date: '12-6'
+          name: '面试',
+          detail: '查看邮箱进入面试页面，连续两场',
+          date: '下周二'
         },
         {
-          name: '计算机问题求解',
-          detail: 'Lab2',
-          date: '两周后'
+          name: '无线网络应用',
+          detail: '作业',
+          date: '11-9'
         },
         {
-          name: '助教',
-          detail: '整理补选实验，旁听（周二曹西201）',
-          date: '短期'
+          name: '无线网络应用',
+          detail: '在线考试+实验报告',
+          date: '11-14'
         },
         {
-          name: '复位传说R',
-          detail: '设计总体流程',
-          date: '长期'
+          name: '勇电凯实杯',
+          detail: '方案调研',
+          date: '11-13'
         },
         {
-          name: '洛谷省队',
-          detail: '整理省选题目',
-          date: '长期'
+          name: '勇电凯实杯',
+          detail: '具体实现',
+          date: '11-20'
+        },
+        {
+          name: '勇电凯实杯',
+          detail: '调优，写报告',
+          date: '11-27'
+        },
+        {
+          name: '棋社策划案',
+          detail: '编写初稿',
+          date: '11-13'
         },
         {
           name: '洛谷教案',
           detail: '添加例题、作业等具体方案',
-          date: '长期'
-        },
-        {
-          name: '黄老师课题组',
-          detail: '论文阅读与研讨',
-          date: '长期'
+          date: '11-13'
         }
       ]
     }
