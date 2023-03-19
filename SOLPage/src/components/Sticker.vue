@@ -1,5 +1,5 @@
 <template>
-  <div class="size">
+  <div class="size" style="display: inline-block;">
     <div class="size block">
       <img class="cell" style="width: 100px; height: 100px;" :src="icon ? icon : '/static/PCIlight.png'"/>
       <div class="cell" style="width: 240px; padding: 0px 20px;">

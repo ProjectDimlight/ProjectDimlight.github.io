@@ -30,4 +30,9 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.words {
+  line-height: 2.5;
+}
+
 </style>

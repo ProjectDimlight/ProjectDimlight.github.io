@@ -13,17 +13,16 @@
       </div>
     </router-link>
     <div class="box">
-      SOL模拟器 <span class="label">AI</span>
+      科研进展 <span class="label">学术</span>
     </div>
     <div class="box">
-      ACZip <span class="label">算法</span>
+      世界树默示录 <span class="label">世界观</span>
     </div>
-    <div class="box">
-      复位传说 <span class="label">游戏</span>
-    </div>
-    <div class="box">
-      未名元 <span class="label">SOC</span>
-    </div>
+    <router-link to="/memo">
+      <div class="box">
+        sol失眠记 <span class="label">随笔</span>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -58,7 +57,7 @@ export default {
 .box {
   transition: 1s;
   padding: 15px 10px;
-  width: 120px;
+  width: 150px;
   margin: 0px;
   text-align: center;
 }
