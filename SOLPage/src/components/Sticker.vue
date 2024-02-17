@@ -1,8 +1,8 @@
 <template>
   <div class="size" style="display: inline-block;">
-    <div class="size block">
+    <div class="block" style="width: 100%">
       <img class="cell" style="width: 100px; height: 100px;" :src="icon ? icon : '/static/PCIlight.png'"/>
-      <div class="cell" style="width: 240px; padding: 0px 20px;">
+      <div class="cell" style="width: 230px; padding: 0px 20px;">
         <div style="font-weight: bold; border-bottom: 1px grey solid; margin-bottom: 5px;">
           <slot></slot>
         </div>
@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div class="size shadow">
+    <div class="shadow">
     </div>
   </div>
 </template>
@@ -40,7 +40,7 @@ export default {
 
 .size{
   height: 100px;
-  width: 400px;
+  width: calc(min(80%, 400px));
 }
 
 .block{
@@ -53,7 +53,7 @@ export default {
   position: relative;
   top: -90px;
   left: 15px;
-  height: 94%;
+  height: 95%;
   width: 98%;
   filter: blur(2px);
 
