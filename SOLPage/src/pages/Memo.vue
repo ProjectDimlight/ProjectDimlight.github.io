@@ -10,8 +10,8 @@
     <div style="margin: 25px auto; width: 80%;">
 
       <field v-for="(item, index) in data" :key="index" :icon="item['icon']" style="margin: 10px;" class="sticker">
-        <span>{{item['title']}}</span>
         <span style="float:right;">{{item['date']}}</span>
+        <span>{{item['title']}}</span>
         <template v-slot:description>
           <div v-html="item['contents']"></div>
         </template>

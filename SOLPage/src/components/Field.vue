@@ -1,7 +1,7 @@
 <template>
   <div style="display: inline-block;">
     <div class="block">
-      <img class="cell" style="width: 100px; height: 100px; border-radius:50%;" :src="icon ? icon : '/static/PCIlight.png'"/>
+      <img class="cell" style="width: 50px; height: 50px; border-radius:50%;" :src="icon ? icon : '/static/PCIlight.png'"/>
       <div class="cell" style="width: 100%; padding: 0px 20px;">
         <div style="font-weight: bold; border-bottom: 1px grey solid; padding: 15px 0px;">
           <slot></slot>

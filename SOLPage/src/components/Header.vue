@@ -1,26 +1,24 @@
 <template>
   <div class="block">
     <router-link to="/">
-      <div class="box" style="width: 160px;">
-        S<span style="font-size: 0.8em; color: cyan;">OL</span>&nbsp;&nbsp;
-        O<span style="font-size: 0.8em; color: cyan;">N</span>&nbsp;&nbsp;
-        L<span style="font-size: 0.8em; color: cyan;">INE</span>
+      <div class="box" style="width: 100px;">
+        S<span>ol</span> O<span>n</span> L<span>ine</span>
       </div>
     </router-link>
     <router-link to="/todo">
       <div class="box">
-        TODO List <span class="label">日程</span>
+        日程
       </div>
     </router-link>
     <div class="box">
-      科研进展 <span class="label">学术</span>
+      学术
     </div>
     <div class="box">
-      世界树默示录 <span class="label">世界观</span>
+      树
     </div>
     <router-link to="/memo">
       <div class="box">
-        sol失眠记 <span class="label">随笔</span>
+        随笔
       </div>
     </router-link>
   </div>
@@ -38,6 +36,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+span {
+  font-size: 9px;
+  color: cyan;
+}
 
 .block {
   background-color: rgba(255, 255, 255, 0.25);
@@ -57,9 +60,11 @@ export default {
 .box {
   transition: 1s;
   padding: 15px 10px;
-  width: 150px;
+  width: 50px;
   margin: 0px;
   text-align: center;
+
+  overflow-x: hidden;
 }
 
 .box:hover {

@@ -1,18 +1,11 @@
 <template>
-  <div style="display: flex;">
-    <div style="width: 400px; padding: 50px;">
-      <div style="border-right: 1px grey solid; padding: 20px; padding-bottom: 200px; text-align: center; font-size: 40px;">
-        日程表
-      </div>
-    </div>
-    <div style="padding: 100px;">
-      <sticker v-for="(item, index) in items" :key="index" :category="item['date']" icon="" style="margin: 10px;" class="sticker">
-        {{item['name']}}
-        <template v-slot:description>
-          {{item['detail']}}
-        </template>
-      </sticker>
-    </div>
+  <div style="width: calc(min(90%, 400px)); margin: 0px auto; padding: 20px 0px;">
+    <sticker v-for="(item, index) in items" :key="index" :category="item['date']" icon="" style="margin: 10px;" class="sticker">
+      {{item['name']}}
+      <template v-slot:description>
+        {{item['detail']}}
+      </template>
+    </sticker>
   </div>
 </template>
 
@@ -28,14 +21,14 @@ export default {
     return {
       items: [
         {
-          name: 'Seminar@Cityu',
-          detail: '下一次是7月5日',
-          date: '每周一 13:00'
+          name: 'Seminar @ Cityu',
+          detail: '暂时取消',
+          date: '取消'
         },
         {
-          name: '每周同步@ZJU',
-          detail: '也许ddl是8月吧',
-          date: '每周二 15:30'
+          name: '双周同步@ZJU',
+          detail: '一年半了还没搞出来，废了',
+          date: '周一19点'
         }
       ]
     }
