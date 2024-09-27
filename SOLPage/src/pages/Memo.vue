@@ -1,14 +1,15 @@
 <template>
   <div>
-    <div class="words" style="text-align:center; margin:50px; color:grey; font-size: 14px;">
+    <div style="text-align:center; margin:50px;">
+      <span class="high-line-height grey">
       sol失眠也不是一天两天了。<br/>
       sol吃过安眠药、但还没睡着的时间里，经常会冒出各种奇思妙想。<br/>
       有99.99%或许是精神错乱的胡言乱语。有0.01%或许会是转瞬即逝的灵感迸发。<br/>
       总之，哪怕只是当成一个随机数发生器，记下来也是好的。
+      </span>
     </div>
 
-    <div style="margin: 25px auto; width: 80%;">
-
+    <div class="content-block">
       <field v-for="(item, index) in data" :key="index" :icon="item['icon']" style="margin: 10px;" class="sticker">
         <span style="float:right;">{{item['date']}}</span>
         <span>{{item['title']}}</span>

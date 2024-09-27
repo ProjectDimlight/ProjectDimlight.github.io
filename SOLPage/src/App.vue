@@ -31,8 +31,18 @@ a {
   text-decoration: none;
 }
 
-.words {
-  line-height: 2.5;
+.high-line-height {
+  line-height: 2.4;
+}
+
+.grey {
+  color:grey;
+  font-size: 14px;
+}
+
+.content-block {
+  margin: 25px auto;
+  width: 80%;
 }
 
 </style>

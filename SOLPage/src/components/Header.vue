@@ -10,12 +10,16 @@
         日程
       </div>
     </router-link>
-    <div class="box">
-      学术
-    </div>
+    <router-link to="/academic">
+      <div class="box">
+        学术
+      </div>
+    </router-link>
+    <router-link to="/treeverse">
     <div class="box">
       树
     </div>
+    </router-link>
     <router-link to="/memo">
       <div class="box">
         随笔
