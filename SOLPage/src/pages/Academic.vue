@@ -1,5 +1,6 @@
 <template>
-    <div class="content-block">
+  <div style="margin-top: 100px;">
+  <div class="content-block">
     <sec depth="1" title="研究方向">
     我自以为我在研究以下方向（按照Most Recently Used排序），但是实际上我自己也并不确定自己是否入了门，大概是没有：
     <ul>
@@ -21,6 +22,7 @@
       </ul>
     </ul>
     </sec>
+  </div>
   </div>
 </template>
 

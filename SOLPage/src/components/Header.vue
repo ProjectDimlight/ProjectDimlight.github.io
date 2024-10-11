@@ -15,10 +15,15 @@
         学术
       </div>
     </router-link>
+    <a href="https://music.163.com/#/artist?id=32070871" target="网易云音乐人SOL">
+      <div class="box">
+        音乐
+      </div>
+    </a>
     <router-link to="/treeverse">
-    <div class="box">
-      树
-    </div>
+      <div class="box">
+        树
+      </div>
     </router-link>
     <router-link to="/memo">
       <div class="box">
