@@ -3,5 +3,5 @@ cd SOLPage
 npm run build
 cd ..
 git add .
-git commit -m "Add memo"
+git commit -m "$1"
 # git push origin master
